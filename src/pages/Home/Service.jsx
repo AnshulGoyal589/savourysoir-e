@@ -41,8 +41,8 @@ const Service = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true, 
+      duration: 400,
+      once: false,
     });
   }, []);
 
@@ -55,17 +55,13 @@ const Service = () => {
         </p>
       </div>
 
-      <div>
-        <Scard />
-      </div>
-
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4">
         {servicesInfo.map((service, index) => (
           <div
             key={index}
             className="flex gap-5 p-4 bg-gray-100 rounded-lg shadow-md"
-            data-aos="fade-up"  
-            data-aos-delay={index*10} 
+            data-aos="fade-up"
+            data-aos-delay={index*40} 
           >
             <div className="icon text-4xl mb-4">{service.icon}</div>
             <div>

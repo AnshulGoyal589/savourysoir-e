@@ -19,6 +19,7 @@ import CateringEvents from "./CateringEvents";
 import News from "./News";
 import FindUs from "./FindUs";
 import AOS from "aos";
+import Navbar from  '../../components/Header/Navbar'
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
 
@@ -171,14 +172,14 @@ const Home = () => {
       </div>
 
       <div>
-        <AboutUs />
+        {/* <AboutUs /> */}
       </div>
 
       <div className="mt-9 bg-gray-100 py-10">
         <Testimonial />
       </div>
 
-      <div>
+      <div className="">
         <CateringEvents />
       </div>
 

@@ -263,7 +263,6 @@ const menuData = {
   ],
   };
 
-
 const categories = ["Appetizers", "Grill", "SeaFood", "Drinks", "Deserts"];
 
 const MenuComponent = () => {
