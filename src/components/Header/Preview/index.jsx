@@ -1,10 +1,10 @@
 import "./preview.css"
 const Preview=(props)=>{
-    
+    console.log(props.page.replace(' ',''))
     return (
-    props.page?
-            <div style={{backgroundImage:`url(./${props.page}.png)`}} className="preview">
-                <p>Home &nbsp; {" > "} &nbsp; {props.page}</p>
+    props.page!='n/a'?
+            <div style={{backgroundImage:`url(./${props.page.replace(' ','')}.png)`}} className="preview">
+                <p>Home &nbsp; {"/"} &nbsp; Services &nbsp;{props.page!="Services"?`   / ${props.page}`:null}</p>
                 <text>{props.page}</text>
             </div>
     :

@@ -12,9 +12,24 @@
 .preview p{
     color:white;
     margin-left:7%;
+    animation:enter 1s forwards 0.3s;
+    position:relative;
+    right:500px;
 }
 .preview text{
     color:white;
     font-size:2.5rem;
     margin-left:7%;
+    animation:enter 1s forwards ;
+    position:relative;
+    right:500px;
+}
+
+@keyframes enter{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
 }
