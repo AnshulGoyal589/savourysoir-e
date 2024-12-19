@@ -1,7 +1,11 @@
-const EventHome=()=>{
+import {useEffect} from "react"
+const EventHome=(props)=>{
+    useEffect(()=>{
+        props.setPreview("Services");
+    },[])
     return (
         <div>
-            Hello Nipun
+            Hello there
         </div>
     )
 }
