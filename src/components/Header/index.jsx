@@ -1,8 +1,7 @@
 import "./header.css"
-import Navbar from "./navbar/index.jsx"
-import Details from "./details/index.jsx"
-import Preview from "./preview/index.jsx"
-import {useState} from "react"
+import Navbar from "./Navbar"
+import Details from "./Details"
+import Preview from "./Preview"
 const Header=(props)=>{
     return (
         <div className="header">

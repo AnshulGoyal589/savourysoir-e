@@ -1,0 +1,438 @@
+.event-container{
+    margin:2.5%;
+    margin-top:1%;
+    padding:2.5%;
+    /* border-top:1px solid salmon; */
+    /* border-left:2px solid salmon; */
+    border-radius: 12px;;
+    display:flex;
+    gap:2%;
+}
+.on-your-right{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:5%;
+}
+.quick-links{
+    width:33vw;
+    background-color:transparent;
+    height:500px;
+    border-radius:8px;
+    display:flex;
+    flex-direction:column;
+    gap:1.5%;
+    align-items:center;
+    justify-content:center;
+    border-radius:8px;
+    /* box-shadow:0px 0px 50px grey; */
+
+}
+.quick-links .inner-content{
+    box-shadow:0px 0px 60px black;
+    border-radius:6px;
+    width:70%;
+    height:70%;
+    background-color:rgb(135, 46, 36);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    color:white;
+    padding:3%;
+}
+.quick-links .inner-content h2{
+    font-size:2rem;
+    margin-bottom:5%;
+}
+.quick-links .inner-content p{
+    text-align:center;
+}
+.on-your-right>:nth-child(2){
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction:column;
+}
+.quick-links>h1{
+    width:100%;
+    border-bottom:5px solid white;
+    color:white;
+    padding:5%;
+    font-size:2.5rem;
+    text-align:center;
+    text-shadow: 5px 5px 10px black;
+}
+.quick-links>p{
+    margin-top:5%;
+    background-color: black;
+    opacity:0.8;
+    color:white;
+    width:100%;
+    height:40%;
+    text-align:center;
+    padding:6%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-radius: 12px;
+}
+.event-list{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    width:57vw;
+    height:1400px;
+    gap:3%;
+    border-radius: 8px;
+}
+.event-list>div{
+    box-shadow: 0px 0px 20px rgb(123, 122, 122);
+    border-radius: 8px;
+}
+.event-list>div:hover{
+    animation:expand 0.3s forwards;
+    cursor: pointer;
+}
+.event-list .corporate-event{
+    grid-column:span 3;
+    display:flex;
+}
+.event-list .corporate-event .placeholder{
+    height:100%;
+    width:35%;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow:0px 0px 10px grey;
+}
+.event-list .corporate-event .auxiliary{
+    width:65%;
+    /* background-color:#ed7e42; */
+    border-bottom-right-radius: 8px;
+    background-image: linear-gradient(to left,brown ,#ed7e42,#efc895);
+}
+.event-list .corporate-event .description{
+    margin-right:5px;
+    border-bottom-right-radius: 8px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    height:50%;
+    
+}
+.event-list .corporate-event h2{
+    font-size:1.5rem;
+    text-align:center;
+    padding:2%;
+    text-shadow:0px 0px 5px grey;
+    font-weight:600;
+    color:white;
+    background-position: fixed;
+    background-color: black;
+    text-transform: capitalize;
+}
+.event-list .corporate-event p{
+    background-image:linear-gradient(to left,lightgray,white);
+    padding:2%;
+    width:100%;
+    height:100%;
+    border-bottom-right-radius: 8px;
+    box-shadow:0px 0px 10px rgb(222, 222, 222);
+    color:grey;
+    text-align:center;
+}
+.event-list .corporate-event button{
+    border:2px solid #f09c6e;
+    padding:2%;
+    width:25%;
+    margin-left:37.5%;
+    margin-top:1%;
+    /* background-color: #ec8d59; */
+    color:white;
+    font-weight:600;
+    border:1px solid white;
+    border-radius:5px;
+}
+.social-event{
+    grid-row:span 2;
+    max-width:20vw;
+    display:flex;
+    justify-content:center;
+    overflow: hidden;
+}
+.social-event .circle{
+    border-radius:50%;
+    position:relative;
+    top:5%;
+    left:5%;
+    min-width:350px;
+    height:350px;
+    background-image:linear-gradient(salmon,brown,black);
+    margin-top:5%;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+.social-event .circle h2{
+    font-size:1.5rem;
+    font-weight:600;
+}
+.social-event .circle p{
+    text-align:center;
+    padding-left:20%;
+    padding-right:20%;
+}
+.social-event button{
+    border:1px solid white;
+    margin-top:7%;
+    padding:3%;
+    color:white;
+    border-radius:6px;
+}
+.social-event button:hover{
+    background-color:salmon;
+    color:white;
+}
+.international-event{
+    grid-column:span 2;   
+    display:flex;
+}
+.international-event .img-backdrop{
+    width:60%;
+    height:100%;
+    font-size:2rem;
+    font-weight:700;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.international-event .img-backdrop h2{
+    text-shadow:7px 7px 5px black;
+    margin-left:5%;
+}
+.international-event .title{
+    width:40%;
+    background-image:linear-gradient(to left,lightgray,white);
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+.international-event .title p{
+    color:grey;
+    padding:5%;
+    text-align:center;
+}
+.international-event .title button{
+    border:1px solid black;
+    color:black;
+    padding:4%;
+    width:70%;
+}
+.international-event .title button:hover{
+    background-color:white;
+    color:black;
+    cursor:pointer;
+}
+.engagement{
+    grid-column: span 2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-size:100%;
+}
+.engagement .simple{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    /* border:1px solid #f09c6e; */
+    height:85%;
+    width:80%;
+    background-color:black;
+    opacity:0.8;
+    border-radius:8px;
+}
+.engagement .simple h2{
+    text-align:center;
+    font-size:1.7rem;
+    color:white;
+    text-shadow:50px 10px 50px black;
+}
+.engagement p{
+    color:white;
+    text-align:center;
+    padding:4%;
+    text-shadow:10px 10px 50px white;
+}
+.engagement .simple button{
+    border:1px solid salmon;
+    margin-top:-2%;
+    width:25%;
+    height:40px;
+    color:white;
+    margin-bottom:2%;
+}
+.birthday{
+    grid-column: span 3;
+    display:flex;
+    border-bottom-right-radius: 8px;
+}
+.birthday>div{
+    height:100%;
+}
+.birthday .image-container{
+    flex:1.8;
+    max-width:36%;
+    max-height: 250px;
+}
+.birthday .image-container img{
+    height:100%;
+    width:100%;
+}
+.birthday .title{
+    flex:1.2;
+    background-color:black;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    gap:5%;
+}
+.birthday .title h2{
+    font-size:2rem;
+    color:white;
+}
+.birthday .title button{
+    border:1px solid salmon;
+    border-top:none;
+    color:white;
+    padding:5%;
+    margin-top:5%;
+    width:100%;
+}
+.birthday .color-line{
+    flex:0.5;
+    background-color:salmon;
+}
+.birthday .description{
+    flex:1.5;
+    border-right:10px solid #f09c6e;
+    border-bottom:10px solid #f09c6e;
+    border-bottom-right-radius: 8px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3%;
+    background-image:radial-gradient(white,white,lightgray);
+}
+.birthday .description p{
+    color:lightgray;
+    text-align:center;
+}
+.wedding{
+    grid-column:span 3;
+}
+.event-list .quick-links{
+    display:none;
+    width:100%;
+    grid-column:span 3;
+    max-height:270px;
+}
+.event-list .quick-links h1{
+    padding:2%;
+}
+@keyframes expand{
+    0%{
+        scale:1
+    }
+    100%{
+        scale:1.05;
+    }
+}
+@media (max-width:1000px){
+    .on-your-right{
+        display:none;
+    }
+    .event-list{
+        width:90vw;
+        gap:2%;
+        height:900px;
+    }
+    .event-list >div{
+        min-height:250px;
+    }
+    .social-event{
+        max-width:min-content;
+    }
+    .event-list .quick-links{
+        display:block;
+    }
+}
+@media (max-width:700px){
+    .corporate-event{
+        height:max-content;
+    }
+    .corporate-event .description>p{
+        font-size:0.8rem;
+    }
+    .corporate-event button{
+        font-size:0.75rem;
+        min-width:40%;
+    }
+    .social-event{
+        min-width:35vw;
+    }
+    .social-event p{
+        font-size:0.8rem;
+    }
+    .social-event h2{
+        font-size:0.8rem;
+    }
+    .event-list >div{
+        min-height:200px;
+    }
+    .international-event p{
+        font-size:0.7rem;
+    }
+    .international-event h2{
+        font-size:1.5rem;
+    }
+    .international-event button{
+        font-size:0.8rem;
+    }
+    .engagement .simple{
+        height:90%;
+    }
+    .engagement .simple h2{
+        font-size:1.2rem;
+    }
+    .engagement .simple p{
+        font-size:0.7rem;
+    }
+    .engagement .simple button{
+        font-size: 0.8rem;
+        width:40%;
+    }
+    .birthday .title h2{
+        font-size:1.5rem;
+        margin:5%;
+    }
+    .birthday .description {
+        font-size:0.7rem;
+    }
+    .birthday button{
+        font-size:0.8rem;
+    }
+    .event-list .quick-links{
+        max-height: 250px;
+    }
+    .event-list .quick-links p{
+        font-size: 0.8rem;
+    }
+}
