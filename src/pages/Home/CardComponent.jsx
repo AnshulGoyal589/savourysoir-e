@@ -48,30 +48,43 @@ const CardComponent = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full bg-white">
+    <div className="flex flex-col items-center w-full bg-white px-4 sm:px-8 md:px-12 lg:px-16 py-10">
       <Swiper
-        onSwiper={(swiper) => (swiperRef.current = swiper)} 
-        slidesPerView={3} 
-        spaceBetween={30}
-        loop={true} 
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        spaceBetween={20}
+        loop={true}
         modules={[Navigation, Pagination]}
         className="w-full h-[500px]"
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        }}
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="h-full flex flex-col items-center bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="w-full h-1/2">
+              <div className="w-full h-1/3">
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover rounded-t-lg"
                   alt={slide.heading}
                   src={slide.image}
                 />
               </div>
 
               <div className="p-4 flex flex-col justify-center items-center text-center gap-4">
-                <h1 className="font-bold text-2xl text-gray-800">{slide.heading}</h1>
-                <p className="text-gray-600 leading-relaxed">{slide.subheading}</p>
-                <button className="border px-4 py-2 transition-all duration-200 border-[#f1a986] text-[#f1a986] hover:bg-[#f1a986] hover:text-white rounded-md">
+                <h1 className="font-bold text-xl sm:text-xl md:text-xl text-gray-800">
+                  {slide.heading}
+                </h1>
+                <p className="text-sm sm:text-base md:text-lg  text-gray-600 leading-relaxed">
+                  {slide.subheading}
+                </p>
+                <button className="border px-4 py-2 transition-all duration-200 border-[#f1a986] text-[#f1a986] hover:bg-[#f1a986] hover:text-white rounded-md text-sm sm:text-base lg:text-lg xl:text-xl">
                   Read More
                 </button>
               </div>
@@ -80,7 +93,7 @@ const CardComponent = () => {
         ))}
       </Swiper>
 
-      <div className="flex justify-center gap-4 mt-6 bg-transparent">
+      <div className="flex pb-10 justify-center gap-4 lg:mt-8 mt-6 bg-transparent">
         <button
           onClick={() => swiperRef.current?.slidePrev()}
           className="bg-[#f1a986] text-white px-6 py-3 rounded-full hover:bg-[#e08b66] transition-all duration-200"
@@ -99,5 +112,3 @@ const CardComponent = () => {
 };
 
 export default CardComponent;
-
-

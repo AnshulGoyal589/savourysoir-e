@@ -8,6 +8,7 @@ module.exports = {
       mono: ["Roboto Mono", "monospace"],
     },
     colors: {
+      peach: "#f1a986",
       white: "#fff",
       black: "#000",
       transparent: "#ffffff00",
@@ -122,24 +123,21 @@ module.exports = {
         700: "#005A67",
         800: "#003D47",
         900: "#002127",
-    },
-    purple: {
-      5: "#F5E0FF",  // Light lavender
-      25: "#E3B3FF", // Light purple
-      50: "F", // Bright purple
-      100: "#BD4DFF", 
-      200: "#AA1AFF", 
-      300: "#9000E6", 
-      400: "#7400C2", 
-      500: "#5900A6", 
-      600: "#430087", 
-      700: "#2D005A", 
-      800: "#170047", 
-      900: "#0D0027",  // Dark purple
-  },
-  
-    
-
+      },
+      purple: {
+        5: "#F5E0FF",  // Light lavender
+        25: "#E3B3FF", // Light purple
+        50: "#F", // Bright purple
+        100: "#BD4DFF", 
+        200: "#AA1AFF", 
+        300: "#9000E6", 
+        400: "#7400C2", 
+        500: "#5900A6", 
+        600: "#430087", 
+        700: "#2D005A", 
+        800: "#170047", 
+        900: "#0D0027",  // Dark purple
+      },
       "pure-greys": {
         5: "#F9F9F9",
         25: "#E2E2E2",
@@ -154,10 +152,19 @@ module.exports = {
         800: "#171717",
         900: "#141414",
       },
+      gray: {
+        100: "#f7fafc", // Lightest gray
+        200: "#edf2f7", 
+        300: "#e2e8f0",
+        400: "#cbd5e0",
+        500: "#a0aec0",
+        600: "#718096",
+        700: "#4a5568",
+        800: "#2d3748", // Dark gray
+        900: "#1a202c", // Darkest gray
+      },
     },
-    extend: {
-      
-    },
+    extend: {},
   },
   plugins: [],
 };
