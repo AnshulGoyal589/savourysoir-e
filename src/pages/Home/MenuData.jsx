@@ -272,55 +272,54 @@ const MenuComponent = () => {
   const handleCategoryClick = (category) => {
     setSelectedCategory(category);
   };
-
   return (
-    <div className="menu-container ">
-      {/* Category Grid */}
-      <div className="category-grid grid grid-cols-5 gap-4 mb-6">
+    <div className="menu-container pt-3 pb-7 px-6 bg-white">
+      <div className="category-grid grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 md:min-h-[5rem] gap-4 mb-6">
         {categories.map((category, index) => (
           <button
             key={index}
             onClick={() => handleCategoryClick(category)}
-            className={`category-btn py-2 px-4 min-h-[100px] text-lg rounded-md focus:outline-none ${
+            className={`py-2 px-4 text-sm sm:text-lg md:text-xl rounded-md transition duration-300 ease-in-out focus:outline-none ${
               selectedCategory === category
-                ? 'bg-[#f1a986] text-white'
-                : 'bg-gray-200 text-black'
+                ? 'bg-[#f1a986] text-white transform scale-105'
+                : 'bg-gray-200 text-black hover:bg-gray-300'
             }`}
           >
             {category}
           </button>
         ))}
       </div>
-
+  
       <div className="data-display mt-6">
-  <div className="data-container px-11">
-    <div className="menu-items grid grid-cols-2 gap-6">
-      {menuData[selectedCategory].map((item, index) => (
-        <div
-          key={index}
-          className="menu-item border p-4 rounded-md bg-white shadow-lg flex items-center"
-        >
-          <div className="menu-item-content flex-1">
-            <h3 className="font-semibold text-xl">{item.dishName}</h3>
-            <p className="text-gray-600 text-sm">{item.dishInfo}</p>
-            <p className="text-lg font-bold mt-2">{item.price}</p>
-          </div>
-
-          <div className="ml-auto">
-            <img
-              src={item.image}
-              alt={item.dishName}
-              className="w-16 h-16 object-cover rounded-full"
-            />
+        <div className="data-container px-4 sm:px-8 md:px-11">
+          <div className="menu-items grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6">
+            {menuData[selectedCategory].map((item, index) => (
+              <div
+                key={index}
+                className="menu-item border p-4 rounded-md bg-white shadow-lg flex flex-col items-center sm:flex-row sm:items-start"
+              >
+                <div className="menu-item-content flex-1 text-center sm:text-left">
+                  <h3 className="font-semibold text-lg sm:text-xl">{item.dishName}</h3>
+                  <p className="text-gray-600 text-sm sm:text-base">{item.dishInfo}</p>
+                  <p className="text-lg font-bold mt-2">{item.price}</p>
+                </div>
+                <div className="ml-auto mt-4 sm:mt-0">
+                  <img
+                    src={item.image}
+                    alt={item.dishName}
+                    className="w-20 h-20 sm:w-16 sm:h-16 object-cover rounded-full"
+                  />
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</div>
-
+      </div>
     </div>
   );
+  
+  
+  
 };
 
 export default MenuComponent;
