@@ -1,0 +1,110 @@
+.footer{
+    background-color:#1f1f1f;
+    height:600px;
+    width:100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.footer> div{
+    height:100%;
+}
+.footer .external-links{
+    flex:0.8;
+    min-width:350px;
+}
+.footer .contact-us{
+    color:rgb(194, 194, 194);
+    font-size:2rem;
+    min-width:350px;
+}
+.footer .contact-us h1{
+    width:100%;
+    padding:1%;
+    font-size:2rem;
+    font-weight:100;
+    margin-left:5%;
+    margin-bottom:2%;
+}
+.footer .contact-us ul{
+    width:90%;
+    height:37.5%;
+    margin-bottom:2.5%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    box-shadow:15px 15px 20px black;
+    border-radius:8px;
+    color:grey;
+    border-top:1px solid black;
+}
+.footer .contact-us li{
+    width:100%;
+    margin:2%;
+    font-size:1.2rem;
+    margin-left:15%;
+    max-height:15%;
+    display:flex;
+    gap:2%;
+    font-weight: 200;
+}
+.footer .contact-us li img{
+    height:100%;
+    width:5%;
+    min-height:10px;
+    min-width:10px;
+}
+.footer .contact-us{
+    flex:1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    
+}
+.footer .map{
+    height:60%;
+    width:100%;
+    /* background-color: rgb(34, 34, 34); */
+    min-height:340px;
+    min-width:400px;
+}
+.footer iframe{
+    width:80%;
+    height:90%;
+    margin-top:2.5%;
+    margin-left:10%;
+    min-height:300px;
+}
+.footer .fast-links{
+    list-style-type:circle;
+    color:rgb(162, 161, 161);
+    margin-left:15%;
+    margin-top:5%;
+    width:80%;
+    padding:3%;
+    /* border-right:1px solid rgb(138, 138, 138);
+    border-bottom:1px solid rgb(80, 78, 78); */
+    box-shadow:2.5px 5px 7px rgb(0, 0, 0);
+    border-radius:8px;
+}
+.footer .fast-links li{
+    margin:4%;
+    font-size:1.3rem;
+    font-weight: 150;
+}
+.footer .external-links h1{
+    margin-top:2%;
+    color:rgb(161, 160, 160);
+    font-size:2rem;
+    font-weight:100;
+    margin-left:5%;
+}
+.footer> .external-links{
+    height:80%;
+}
+@media (max-width:1200px) {
+    .footer{
+        height:min-content;
+    }
+}

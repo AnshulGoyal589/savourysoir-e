@@ -7,7 +7,7 @@
     border-radius: 12px;;
     display:flex;
     gap:2%;
-    background-image: linear-gradient(to bottom left,lightgray,white);
+    background-image: linear-gradient(to bottom left,lightgray,white,white);
 }
 .on-your-right{
     display:flex;
@@ -75,15 +75,16 @@
     padding:6%;
     display:flex;
     align-items:center;
+    flex-direction:column;
     justify-content:center;
     border-radius: 12px;
 }
 .event-list{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
     width:57vw;
-    height:1400px;
+    height:1120px;
     gap:3%;
     border-radius: 8px;
 }
@@ -148,7 +149,7 @@
     padding:2%;
     width:25%;
     margin-left:37.5%;
-    margin-top:1%;
+    margin-top:2%;
     /* background-color: #ec8d59; */
     color:white;
     font-weight:600;
@@ -256,7 +257,6 @@
     height:85%;
     width:80%;
     background-color:black;
-    opacity:0.75;
     border-radius:8px;
 }
 .engagement .simple h2{
@@ -356,27 +356,38 @@
     }
 }
 @media (max-width:1000px){
+    .event-list{
+        display:grid;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
     .on-your-right{
         display:none;
     }
     .event-list{
         width:90vw;
         gap:2%;
-        height:900px;
+        height:1400px;
     }
     .event-list >div{
         min-height:250px;
     }
+    .event-list >div:hover{
+        animation:none;
+    }
     .social-event{
         max-width:min-content;
+    }
+    .corporate-event .auxiliary button{
+        margin-top:2%;
     }
     .event-list .quick-links{
         display:block;
     }
 }
 @media (max-width:700px){
-    .corporate-event{
-        height:max-content;
+    .corporate-event .description{
+        min-height:55%;
     }
     .corporate-event .description>p{
         font-size:0.8rem;
@@ -384,6 +395,10 @@
     .corporate-event button{
         font-size:0.75rem;
         min-width:40%;
+    }
+    .corporate-event .auxiliary button{
+        margin-top:5%;
+        margin-left:30%;
     }
     .social-event{
         min-width:35vw;
@@ -419,6 +434,9 @@
         font-size: 0.8rem;
         width:40%;
     }
+    .birthday .title{
+        flex:1.4;
+    }
     .birthday .title h2{
         font-size:1.5rem;
         margin:5%;
@@ -430,9 +448,19 @@
         font-size:0.8rem;
     }
     .event-list .quick-links{
-        max-height: 250px;
+        max-height: 220px;
     }
     .event-list .quick-links p{
         font-size: 0.8rem;
+    }
+    .event-list span{
+        display:none;
+    }
+    .event-list {
+        min-width:400px;
+    }
+    .event-container{
+        min-width:min-content;
+        margin-left:0;
     }
 }

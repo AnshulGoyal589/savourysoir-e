@@ -1,11 +1,14 @@
-import CanteenHome from "../../../assets/header/CanteenHome.png"
 import "./preview.css"
 const Preview=(props)=>{
+    
     return (
-        <div style={{backgroundImage:`url(${CanteenHome})`}} className="preview">
-            <p>Home &nbsp; {" > "} &nbsp; {props.page}</p>
-           <text>{props.page}</text>
-        </div>
+    props.page?
+            <div style={{backgroundImage:`url(./${props.page}.png)`}} className="preview">
+                <p>Home &nbsp; {" > "} &nbsp; {props.page}</p>
+                <text>{props.page}</text>
+            </div>
+    :
+    null
     )
 }
 export default Preview;
