@@ -7,6 +7,7 @@
     border-radius: 12px;;
     display:flex;
     gap:2%;
+    background-image: linear-gradient(to bottom left,lightgray,white);
 }
 .on-your-right{
     display:flex;
@@ -143,7 +144,7 @@
     text-align:center;
 }
 .event-list .corporate-event button{
-    border:2px solid #f09c6e;
+    border:0.5px solid #f09c6e;
     padding:2%;
     width:25%;
     margin-left:37.5%;
@@ -151,7 +152,7 @@
     /* background-color: #ec8d59; */
     color:white;
     font-weight:600;
-    border:1px solid white;
+    border:0.5px solid white;
     border-radius:5px;
 }
 .social-event{
@@ -168,7 +169,7 @@
     left:5%;
     min-width:350px;
     height:350px;
-    background-image:linear-gradient(salmon,brown,black);
+    background-image:linear-gradient(salmon,brown,rgb(80, 18, 18));
     margin-top:5%;
     color:white;
     display:flex;
@@ -186,7 +187,7 @@
     padding-right:20%;
 }
 .social-event button{
-    border:1px solid white;
+    border:0.5px solid white;
     margin-top:7%;
     padding:3%;
     color:white;
@@ -255,7 +256,7 @@
     height:85%;
     width:80%;
     background-color:black;
-    opacity:0.8;
+    opacity:0.75;
     border-radius:8px;
 }
 .engagement .simple h2{
@@ -271,7 +272,7 @@
     text-shadow:10px 10px 50px white;
 }
 .engagement .simple button{
-    border:1px solid salmon;
+    border:0.5px solid salmon;
     margin-top:-2%;
     width:25%;
     height:40px;
@@ -309,8 +310,7 @@
     color:white;
 }
 .birthday .title button{
-    border:1px solid salmon;
-    border-top:none;
+    border-bottom:0.5px solid salmon;
     color:white;
     padding:5%;
     margin-top:5%;

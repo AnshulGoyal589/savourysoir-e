@@ -48,8 +48,8 @@ const Navbar=()=>{
                     <text>Blog</text>
                 </div>
             </div>
-            <div class="collapse-sidebar" onClick={()=>{setSideBar(false)}}>
-                    {">"}
+            <div class="collapse-sidebar" onClick={()=>{setSideBar(false)}} style={{fontFamily:"sans-serif"}}>
+                    {"x"}
             </div>
             </>
             :
