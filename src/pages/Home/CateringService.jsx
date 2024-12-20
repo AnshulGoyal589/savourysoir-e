@@ -8,7 +8,7 @@ const CateringService = () => {
       <div>
         <div
           style={{
-            backgroundImage: `url(${b2})`,
+            backgroundImage: `url(https://www.keydesign-themes.com/etalon/catering/wp-content/uploads/sites/19/2017/06/photo-3.jpg)`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}

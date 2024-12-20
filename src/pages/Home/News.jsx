@@ -4,12 +4,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
-import img1 from '../../assets/img1.jpg';
-import img2 from '../../assets/img2.jpg';
-import img3 from '../../assets/img3.jpg';
-import img4 from '../../assets/img4.jpg';
-import b1 from '../../assets/b1.jpg';
-import b2 from '../../assets/b2.jpg';
+import img1 from '../../assets/n1.jpg';
+import img2 from '../../assets/n2.jpg';
+import img3 from '../../assets/n3.jpg';
+import img4 from '../../assets/n4.jpg';
+import b1 from '../../assets/n5.jpg';
+import b2 from '../../assets/n6.jpg';
 
 const News = () => {
   const data = [

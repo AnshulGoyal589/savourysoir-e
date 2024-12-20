@@ -86,7 +86,7 @@ const Home = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 3000,
+      duration: 1000,
     });
   }, []);
 

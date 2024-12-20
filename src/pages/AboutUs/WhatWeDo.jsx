@@ -37,14 +37,13 @@ const WhatWeDo = () => {
           What we do
         </h1>
         <div className="text-richblack-300">
-          <p className="mb-4 font-semibold">
-            Ex per aeque denique constituto, purto populo molestiae ei has. Sea te quaeque nostrum maluisset, id persius
-            appetere pro, mea harum ridens regione an. Ei quas nullam vivendo sit.
+          <p className="mb-4 text-xl font-semibold">
+          We specialize in creating tailored catering solutions for events of all sizes. Whether it’s a wedding, corporate event, or private party, our focus is on quality, creativity, and flawless execution.
           </p>
-          <ul className="list-disc font-semibold pl-16 space-y-2">
-            <li>Persius appetere pro mea harum ridens</li>
-            <li>Instructior vis at causae legimus luptatum mel</li>
-            <li>Maluisset id persius appetere pro mea harum</li>
+          <ul className="list-disc text-lg font-semibold pl-16 space-y-2">
+          <li>Customized menus to suit every event theme and preference</li>
+            <li>Attention to detail in presentation and service</li>
+            <li>Professional staff ensuring seamless event execution</li>
           </ul>
         </div>
       </div>
@@ -61,7 +60,7 @@ const WhatWeDo = () => {
               onClick={() => toggleItem(index)}
             >
               <div
-                className="font-semibold text-gray-800 text-lg hover:text-[#F1A986] transition-colors duration-300"
+                className="font-semibold text-gray-800 text-xl hover:text-[#F1A986] transition-colors duration-300"
               >
                 {item.heading}
               </div>

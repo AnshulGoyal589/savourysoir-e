@@ -4,23 +4,23 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
-import i1 from '../../assets/i1.jpg';
-import i2 from '../../assets/i2.jpg';
-import i3 from '../../assets/i3.jpg';
-import i4 from '../../assets/i4.jpg';
-import i5 from '../../assets/i5.jpg';
-import i6 from '../../assets/i6.jpg';
+import i1 from '../../assets/t1.png';
+import i2 from '../../assets/t2.png';
+import i3 from '../../assets/t3.png';
+import i4 from '../../assets/t4.png';
+import i5 from '../../assets/t1.png';
+import i6 from '../../assets/t2.png';
 
 const TestimonialCard = () => {
   const swiperRef = useRef(null);
 
   const testimonials = [
-    { id: 1, title: "ALWAYS GRATEFUL", text: "The service was exceptional, and the staff went above and beyond to meet my expectations. Content 1", name: "Elaine T.", location: "Kansas City, Missouri", image: i1 },
-    { id: 2, title: "SIMPLY AMAZING", text: "I had an amazing experience! Everything was seamless and exceeded my expectations. Content 2", name: "John D.", location: "Chicago, Illinois", image: i2 },
-    { id: 3, title: "BEST EXPERIENCE", text: "This was by far the best experience I've ever had. Highly professional and efficient. Content 3", name: "Sarah K.", location: "New York, NY", image: i3 },
-    { id: 4, title: "HIGHLY RECOMMENDED", text: "I can't recommend this enough. The attention to detail and care were outstanding. Content 4", name: "Mike L.", location: "Austin, Texas", image: i4 },
-    { id: 5, title: "VERY SATISFIED", text: "I'm extremely satisfied with the results. Their team truly knows what they're doing. Content 5", name: "Nina P.", location: "Seattle, Washington", image: i5 },
-    { id: 6, title: "WONDERFUL SERVICE", text: "The level of service I received was wonderful. Every interaction was pleasant and efficient. Content 6", name: "Oliver R.", location: "Denver, Colorado", image: i6 },
+    { id: 1, title: "ALWAYS GRATEFUL", text: "The service was exceptional, and the staff went above and beyond to meet my expectations. ", name: "Elaine T.", location: "Kansas City, Missouri", image: i1 },
+    { id: 2, title: "SIMPLY AMAZING", text: "I had an amazing experience! Everything was seamless and exceeded my expectations.", name: "John D.", location: "Chicago, Illinois", image: i2 },
+    { id: 3, title: "BEST EXPERIENCE", text: "This was by far the best experience I've ever had. Highly professional and efficient. ", name: "Sarah K.", location: "New York, NY", image: i3 },
+    { id: 4, title: "HIGHLY RECOMMENDED", text: "I can't recommend this enough. The attention to detail and care were outstanding.", name: "Mike L.", location: "Austin, Texas", image: i4 },
+    { id: 5, title: "VERY SATISFIED", text: "I'm extremely satisfied with the results. Their team truly knows what they're doing. ", name: "Nina P.", location: "Seattle, Washington", image: i5 },
+    { id: 6, title: "WONDERFUL SERVICE", text: "The level of service I received was wonderful. Every interaction was pleasant and efficient.", name: "Oliver R.", location: "Denver, Colorado", image: i6 },
   ];
 
   return (

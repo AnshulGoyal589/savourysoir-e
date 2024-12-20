@@ -4,6 +4,10 @@ import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import c1 from '../../assets/c1.jpg'
+import c2 from '../../assets/c2.jpg'
+import c3 from '../../assets/c3.jpg'
+
 
 const MeetOurTeam = () => {
   const [progress, setProgress] = useState([0, 0, 0]);
@@ -35,14 +39,17 @@ const MeetOurTeam = () => {
     {
       chefName: 'Chef Gordon Ramsay',
       oneLinerTextForChef: 'A fiery kitchen genius who redefines the art of cooking with precision and passion.',
+      image:c1,
     },
     {
       chefName: 'Chef Jamie Oliver',
       oneLinerTextForChef: 'An advocate of healthy eating, creating simple, delicious dishes with fresh ingredients.',
+      image:c2,
     },
     {
       chefName: 'Chef Nigella Lawson',
       oneLinerTextForChef: 'A warm and indulgent culinary expert, known for her rich, comforting flavors and passion for food.',
+      image:c3,
     },
   ];
 
@@ -56,13 +63,13 @@ const MeetOurTeam = () => {
             <div className="w-full lg:w-1/3 space-y-6" data-aos="fade-up">
               <div className="max-w-xl">
                 <h1 className="text-3xl font-semibold text-richblack-600 mb-4">
-                  Our goal is to provide a superior customer experience
+                  Meet Our Team
                 </h1>
-                <p className="text-gray-600 mb-6">
-                  Ex per aeque denique constituto, purto populo molestiae ei has. Sea te quaeque nostrum maluisset, id persius appetere pro, mea harum ridens regione an.
+                <p className="text-gray-600 mb-6 text-xl">
+                We are a passionate group of culinary experts dedicated to making your events memorable through extraordinary catering services.
                 </p>
                 <button className="px-6 py-3 border border-peach bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300">
-                  Read More
+                  CONTACT US
                 </button>
               </div>
             </div>
@@ -79,13 +86,13 @@ const MeetOurTeam = () => {
                   >
                     <div className="w-24 h-24 mb-4">
                       <img
-                        src={`/api/placeholder/96/96`}
+                        src={chef.image}
                         alt={chef.chefName}
-                        className="w-full h-full rounded-full object-cover"
+                        className="w-full h-full rounded-full object-fill"
                       />
                     </div>
                     <h2 className="text-xl font-semibold text-gray-800 mb-2">{chef.chefName}</h2>
-                    <p className="text-sm text-gray-600 text-center mb-4">{chef.oneLinerTextForChef}</p>
+                    <p className="text-lg text-gray-600 text-center mb-4">{chef.oneLinerTextForChef}</p>
                     <div className="flex space-x-4 mt-auto">
                       <a href="#" className="text-gray-600 hover:text-[#f1a986] transition-colors">
                         <FaFacebookF className="w-5 h-5" />
@@ -117,8 +124,8 @@ const MeetOurTeam = () => {
               <h2 className="text-3xl font-semibold text-gray-800">
                 Other stats about us
               </h2>
-              <p className="text-gray-600">
-                Ex per aeque denique constituto, purto populo molestiae ei has. Sea te quaeque nostrum maluisset, id persius appetere pro, mea harum ridens regione an.
+              <p className="text-gray-600 text-xl">
+              We take pride in our dedication to quality, creativity, and exceptional service, ensuring your catering needs are met with excellence.
               </p>
               <button className="px-6 py-3 bg-[#f1a986] text-white rounded-md hover:bg-white hover:text-[#f1a986] transition-colors duration-300 border border-[#f1a986]">
                 GET STARTED
