@@ -117,12 +117,13 @@
         display:flex;
         align-items:center;
         justify-content:center;
-        width:96%;
+        width:93%;
         color:white;
         box-shadow:0px 0px 7.5px #f3a47a;
-        font-weight:600;
-        background-color: #f09c6e;
+        font-weight:300;
+        background-color: #ee8850;
         font-size: larger;
+        border-radius: 6px;
         /* border-bottom:2px solid #f4ac84; */
     }
     .header .collapse-sidebar{

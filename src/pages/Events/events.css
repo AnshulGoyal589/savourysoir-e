@@ -170,7 +170,7 @@
     left:5%;
     min-width:350px;
     height:350px;
-    background-image:linear-gradient(salmon,brown,rgb(80, 18, 18));
+    background-image:radial-gradient(salmon,brown,rgb(80, 18, 18));
     margin-top:5%;
     color:white;
     display:flex;
@@ -298,7 +298,7 @@
 }
 .birthday .title{
     flex:1.2;
-    background-color:black;
+    background-image:linear-gradient(to right,black,brown);
     display:flex;
     justify-content:center;
     align-items:center;
@@ -322,7 +322,6 @@
 }
 .birthday .description{
     flex:1.5;
-    border-right:10px solid #f09c6e;
     border-bottom:10px solid #f09c6e;
     border-bottom-right-radius: 8px;
     display:flex;
