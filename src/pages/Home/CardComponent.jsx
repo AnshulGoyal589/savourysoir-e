@@ -4,11 +4,10 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { Navigation, Pagination } from 'swiper/modules';
-import img1 from '../../assets/img1.jpg';
-import img2 from '../../assets/img2.jpg';
-import img3 from '../../assets/img3.jpg';
-import img4 from '../../assets/img4.jpg';
-import b1 from '../../assets/b1.jpg';
+import s1 from '../../assets/s1.jpg';
+import s2 from '../../assets/s2.jpg';
+import s3 from '../../assets/s3.jpg';
+import s4 from '../../assets/s4.jpg';
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const CardComponent = () => {
@@ -16,35 +15,29 @@ const CardComponent = () => {
 
   const slidesData = [
     {
-      image: img1,
-      heading: 'Welcome to Our Site',
+      image: s1,
+      heading: 'Savory Sides',
       subheading:
-        'Welcome to a platform that brings you inspiring content, innovative solutions, and opportunities to grow. Start exploring today and unlock endless possibilities.',
+        'Explore the world of flavors with our curated collection of delicious sides to complement any meal. Dive into a savory adventure!'
     },
     {
-      image: img2,
-      heading: 'Explore New Features',
+      image: s2,
+      heading: 'Tempting Desserts',
       subheading:
-        'Discover cutting-edge features designed to simplify your experience, improve performance, and provide creative solutions for your evolving needs. Let innovation lead the way.',
+        'Indulge in the sweetness of life with our tempting desserts that promise to satisfy your cravings and leave you wanting more.'
     },
     {
-      image: img3,
-      heading: 'Join Us Today',
+      image: s3,
+      heading: 'Flavorful Vegetables',
       subheading:
-        'Be a part of our growing community. Sign up today to access exclusive resources, learn new things, and start a journey toward achieving your goals and live your dream life.',
+        'Discover vibrant, fresh, and flavorful vegetables that transform any dish into a masterpiece of taste and nutritional value.'
     },
     {
-      image: img4,
-      heading: 'Stay Connected',
+      image: s4,
+      heading: 'Beverages & More',
       subheading:
-        'Engage with like-minded individuals, share your ideas, and stay updated with the latest content and features. Let’s grow together as a connected community.',
-    },
-    {
-      image: b1,
-      heading: 'Experience More',
-      subheading:
-        'Unlock exciting opportunities, access exclusive content, and make the most of our platform’s features. Experience growth, learning, and success like never before.',
-    },
+        'Quench your thirst and elevate your moments with our refreshing beverages and more, crafted to delight every palate.'
+    }
   ];
 
   return (
@@ -68,20 +61,20 @@ const CardComponent = () => {
       >
         {slidesData.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="h-full flex flex-col items-center bg-white shadow-md rounded-lg overflow-hidden">
-              <div className="w-full h-1/3">
+            <div className="h-full flex flex-col items-center bg-white shadow-md rounded-lg overflow-hidden group">
+              <div className="w-full h-[40%]">
                 <img
-                  className="w-full h-full object-cover rounded-t-lg"
+                  className="w-full h-full object-fill rounded-t-lg"
                   alt={slide.heading}
                   src={slide.image}
                 />
               </div>
 
               <div className="p-4 flex flex-col justify-center items-center text-center gap-4">
-                <h1 className="font-bold text-xl sm:text-xl md:text-xl text-gray-800">
+                <h1 className="font-bold text-xl sm:text-xl md:text-xl text-gray-800 group-hover:text-[#f1a986] transition-all duration-200">
                   {slide.heading}
                 </h1>
-                <p className="text-sm sm:text-base md:text-lg  text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base md:text-lg text-gray-600 leading-relaxed">
                   {slide.subheading}
                 </p>
                 <button className="border px-4 py-2 transition-all duration-200 border-[#f1a986] text-[#f1a986] hover:bg-[#f1a986] hover:text-white rounded-md text-sm sm:text-base lg:text-lg xl:text-xl">

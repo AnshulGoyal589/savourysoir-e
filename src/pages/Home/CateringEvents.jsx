@@ -1,18 +1,20 @@
 import React from "react";
-import img1 from "../../assets/img1.jpg";
-import img2 from "../../assets/img2.jpg";
-import img3 from "../../assets/img3.jpg";
-import img4 from "../../assets/img4.jpg";
-import b1 from "../../assets/b1.jpg";
 import "aos/dist/aos.css"; 
+import e1 from "../../assets/e1.jpg"
+import e2 from "../../assets/e2.jpg"
+import e3 from "../../assets/e3.jpg"
+import e4 from "../../assets/e4.jpg"
+import e5 from "../../assets/e5.jpg"
+
+
 
 const CateringEvents = () => {
   const data = [
-    { image: img1, text: "Special Event Catering" },
-    { image: img2, text: "Catering Holiday Buffet" },
-    { image: img3, text: "Private Dinner Party" },
-    { image: img4, text: "Summer Garden Catering" },
-    { image: b1, text: "Picnic and Party Buffet" },
+    { image: e1, text: "Special Event Catering" },
+    { image: e2, text: "Catering Holiday Buffet" },
+    { image: e3, text: "Private Dinner Party" },
+    { image: e4, text: "Summer Garden Catering" },
+    { image: e5, text: "Picnic and Party Buffet" },
   ];
 
   return (
