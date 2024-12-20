@@ -7,12 +7,19 @@
     /* justify-content:center; */
     flex-direction:column;
     padding:3%;
+    height:min-content;
 }
 .menu-main{
     width:100%;
     box-shadow:0px -10px 50px rgb(244, 220, 176);
-    height:800px;
+    height:570px;
     border-radius: 18px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+    margin-top: 10%;
+    border-bottom: 1px solid rgb(168, 167, 167);
 }
 .menu-main h1{
     color:black;
@@ -26,17 +33,18 @@
     color:white;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    padding:0.6%;
+    margin-top: -5%;
 }
 .starters{
     width:90%;
-    margin-left:5%;
     height:400px;
-    border:1px solid rgb(241, 151, 49);
     margin-top:2%;
     border-radius:8px;
     display:flex;
     align-items:center;
-    overflow: scroll;
+    overflow-x:auto;
+    box-shadow: 0px 0px 20px rgb(157, 157, 157);
     /* justify-content:space-evenly; */
 }
 .starters .menu-card{
@@ -47,6 +55,13 @@
     box-shadow:0px 0px 10px rgb(220, 220, 220);
     border-radius:8px;
     overflow: hidden;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    flex-direction:column;
+}
+.starters >:nth-last-child(1){
+    margin-right:20px;
 }
 .starters .menu-card .img-container{
     height:45%;
@@ -54,7 +69,7 @@
 .starters .img-container img{
     height:100%;
 }
-.starters .text-content{
+.starters .menu-card .text-content{
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -70,6 +85,7 @@
     color:grey;
     text-align:center;
     font-size:0.9rem;
+    min-height:90px;
 }
 .starters .text-content span{
     width:100%;
@@ -79,6 +95,30 @@
     font-size:1.5rem;
     text-align:center;
     background-color:rgb(255, 140, 0);
-    position: relative;
-    height:150px;
 }
+.menu-main .scroll-buttons {
+    width:100%;
+    margin-top:2%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5%;
+    padding:1%;
+    border-radius:8px;
+}
+.menu-main .scroll-buttons button{
+    width:70px;
+    height:70px;
+    border-radius:8px;
+    background-color:salmon;
+    color:white;
+    font-weight:600;
+    font-size:2rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu-main hr{
+    height: 5px;
+    background-color: black !important; 
+    border: none;
+    margin: 10px 0;
+  }
