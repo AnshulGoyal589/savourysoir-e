@@ -1,17 +1,16 @@
-const MenuCard=()=>{
+const MenuCard=(props)=>{
     return (
     <div className="menu-card">
         <div className="img-container">
             <img src="./Services.png"/>
         </div>
         <div className="text-content">
-            <h2>Paneer Tikka</h2>
+            <h2>{props.name}</h2>
             <p>
-                Lorem ipsum dipsum faora el kal el, krypton, je ,sais pas j'mapelle el dorado
-                je ,sais pas j'mapelle el dorado
+                {props.description}
             </p>
             <span>
-                $4.55
+               {props.price}
             </span>
         </div>
     </div>)

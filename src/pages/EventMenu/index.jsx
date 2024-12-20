@@ -1,10 +1,12 @@
-import { useEffect } from "react";
+import { useEffect,useRef} from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; 
 import MenuCard from "./MenuCard";
+import Course from "./Course"
 import "./eventmenu.css";
 
 const EventMenu = (props) => {
+    const scrollRef=useRef(null);
     useEffect(() => {
         props.setPreview("Corporate Events");
         AOS.init({
@@ -13,19 +15,11 @@ const EventMenu = (props) => {
     }, []);
 
     return (
-        <div className="menu-container">
-            <div className="menu-main" data-aos="fade-up">
-                <h1>Starters</h1>
-                <div className="starters">
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
-                    <MenuCard />
-                </div>
-            </div>
-        </div>
-    );
-};
-
+    <div className="menu-container">
+        <Course name="Starters" color="yelloworange"/>
+        <Course name="Appetizers" color="#f78d4a"/>
+        <Course name="Main Course" color="maroon"/>
+    </div>
+    )
+}
 export default EventMenu;
