@@ -1,5 +1,7 @@
 import MenuCard from "../MenuCard"
 import {useRef,useEffect} from "react"
+import AOS from "aos";
+import "aos/dist/aos.css"; 
 const menuData = [
     {
       id: 1,
@@ -101,6 +103,11 @@ const menuData = [
   
 const Course=(props)=>{
     const scrollRef=useRef(null);
+    useEffect(() => {
+      AOS.init({
+          duration: 500, 
+      });
+  }, []);
     function scrollEvent(direction){
         if (scrollRef.current) {
             if(direction){
@@ -112,7 +119,8 @@ const Course=(props)=>{
           }
     }
     return(
-        <div className="menu-main">
+        <div className="menu-main"
+        data-aos="fade-up">
         <h1 style={{backgroundColor:`${props.color}`}}>{props.name}</h1>
         <div className="starters" ref={scrollRef}>
             {menuData.map((element)=>{

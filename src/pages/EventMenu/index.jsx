@@ -15,10 +15,11 @@ const EventMenu = (props) => {
     }, []);
 
     return (
-    <div className="menu-container">
-        <Course name="Starters" color="yelloworange"/>
-        <Course name="Appetizers" color="#f78d4a"/>
-        <Course name="Main Course" color="maroon"/>
+    <div className="menu-container"
+    >
+        <Course  name="Starters" color="yelloworange"/>
+        <Course  name="Appetizers" color="#f78d4a"/>
+        <Course  name="Main Course" color="maroon"/>
     </div>
     )
 }
