@@ -1,11 +1,14 @@
-import CanteenHome from "../../../assets/header/CanteenHome.png"
 import "./preview.css"
 const Preview=(props)=>{
+    console.log(props.page.replace(' ',''))
     return (
-        <div style={{backgroundImage:`url(${CanteenHome})`}} className="preview">
-            <p>Home &nbsp; {" > "} &nbsp; {props.page}</p>
-           <text>{props.page}</text>
-        </div>
+    props.page!='n/a'?
+            <div style={{backgroundImage:`url(./${props.page.replace(' ','')}.png)`}} className="preview">
+                <p>Home &nbsp; {"/"} &nbsp; Services &nbsp;{props.page!="Services"?`   / ${props.page}`:null}</p>
+                <text>{props.page}</text>
+            </div>
+    :
+    null
     )
 }
 export default Preview;

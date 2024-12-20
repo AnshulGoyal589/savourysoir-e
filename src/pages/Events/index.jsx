@@ -84,7 +84,7 @@ const EventHome=(props)=>{
                 </div>
             </div>
             <div className="quick-links" style={{backgroundImage:`url(${Wedding})`}}>
-                <p> qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun ci velit, sed quia non numquam eius modi tempora in qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun</p>
+                <p> qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora <span>incidun ci velit, sed quia non numquam eius modi tempora in qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun</span></p>
                 <h1>Weddings</h1>
             </div>
         </div>
@@ -100,7 +100,7 @@ const EventHome=(props)=>{
                 </div>
             </div>
             <div className="quick-links" style={{backgroundImage:`url(${Wedding})`}}>
-                <p> qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun ci velit, sed quia non numquam eius modi tempora in qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun</p>
+                <p> qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidun ci velit, sed quia non numquam eius modi tempora in qui dolorem ipsum quia dolor sit amet, consectetur cidun</p>
                 <h1>Weddings</h1>
             </div>
         </div>

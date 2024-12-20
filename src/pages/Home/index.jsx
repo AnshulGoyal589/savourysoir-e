@@ -19,7 +19,6 @@ import CateringEvents from "./CateringEvents";
 import News from "./News";
 import FindUs from "./FindUs";
 import AOS from "aos";
-import Navbar from  '../../components/Header/Navbar'
 import "aos/dist/aos.css";
 import { useInView } from "react-intersection-observer";
 
@@ -58,9 +57,11 @@ const slideAnimations = `
   }
 `;
 
-const Home = () => {
+const Home = (props) => {
   const [animationKey, setAnimationKey] = useState(0);
-  
+  useEffect(()=>{
+    props.setPreview("n/a");
+},[])
   const slidesData = [
     {
       image: b1,
@@ -122,9 +123,9 @@ const Home = () => {
         <div className="absolute inset-0 bg-black bg-opacity-40"></div>
 
         {/* Header Text */}
-        <div className="absolute top-0 left-0 right-0 bg-opacity-30 py-4 hover:bg-white transition-all duration-200">
+        {/* <div className="absolute top-0 left-0 right-0 bg-opacity-30 py-4 hover:bg-white transition-all duration-200">
           <CompSlide />
-        </div>
+        </div> */}
 
         {/* Content Section */}
         <div
