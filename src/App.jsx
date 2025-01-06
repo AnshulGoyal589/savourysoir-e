@@ -1,8 +1,8 @@
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom"
 import Home from "./pages/Home/index.jsx"
 import EventHome from "./pages/Events/index.jsx"
-import Header from "./components/header/index.jsx"
-import Footer from "./components/footer"
+import Header from "./components/Header/index.jsx"
+import Footer from "./components/Footer/index.jsx"
 import {useState} from "react"
 import AboutUs from "./pages/AboutUs"
 import ContactUs from './pages/ContactUs'
